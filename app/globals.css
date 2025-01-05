@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-start: #000000;
+  --background-end: #2c2c2c;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent-color: #336aa1;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+  background: linear-gradient(to bottom right, var(--background-start), var(--background-end));
+}
+
+input::placeholder {
+  color: var(--text-secondary);
+}
+
+.backdrop-blur-lg {
+  backdrop-filter: blur(100px);
+}
